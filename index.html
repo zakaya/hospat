@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Snake Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="game-container">
+    <h1>🐍 Snake Game</h1>
+    <p class="subtitle">Eat the food. Grow your snake. Beat your record!</p>
+
+    <div class="score-board">
+      <div class="score-card">
+        <span>Score</span>
+        <strong id="score">0</strong>
+      </div>
+      <div class="score-card">
+        <span>Best Score</span>
+        <strong id="bestScore">0</strong>
+      </div>
+    </div>
+
+    <div class="canvas-wrapper">
+      <canvas id="gameCanvas" width="400" height="400"></canvas>
+
+      <div id="overlay" class="overlay">
+        <h2 id="overlayTitle">Ready to Play?</h2>
+        <p id="overlayMessage">Press Start to begin your adventure!</p>
+        <button id="startBtn">Start Game</button>
+      </div>
+    </div>
+
+    <button id="restartBtn" class="restart-btn">↻ Restart Game</button>
+
+    <p class="instructions">
+      Use <b>Arrow Keys</b> or <b>W A S D</b> to move.
+    </p>
+
+    <div class="mobile-controls">
+      <button data-dir="up" aria-label="Move up">▲</button>
+      <div class="horizontal-controls">
+        <button data-dir="left" aria-label="Move left">◀</button>
+        <button data-dir="down" aria-label="Move down">▼</button>
+        <button data-dir="right" aria-label="Move right">▶</button>
+      </div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
